@@ -1,16 +1,16 @@
-## Hi there 👋
+<h2 align="left"> Hey Anon! 👋 </h2>
 
-<!--
-**Diekgbbtt/Diekgbbtt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### What I do 👨🏼‍💻 
 
-Here are some ideas to get you started:
+<ul align="left">
+  <li><span style="font-family:'Comic Sans MS',cursive,sans-serif; color:#4da6ff; font-style:italic;">[trying] On a daily, integrating security seamlessly into SDLC.</span></li>
+  <li><span style="font-family:'Comic Sans MS',cursive,sans-serif; color:#4da6ff; font-style:italic;">[free time] Contributing to open source projects, particularly cybersecurity focused.</span></li>
+  <li><span style="font-family:'Comic Sans MS',cursive,sans-serif; color:#4da6ff; font-style:italic;">[more free time] Playing CTFs</span></li>
+</ul>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+### Currently Learning 📚 
+- Go <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="30" height="20" alt="go icon" />
+- Software Architectures 🏗️
+
+### Languages & Tools
