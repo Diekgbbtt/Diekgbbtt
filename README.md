@@ -18,4 +18,15 @@
 
 ### Coding Stats
 <!--START_SECTION:waka-->
+
+```txt
+From: 10 August 2025 - To: 17 August 2025
+
+Total Time: 29 mins
+
+Markdown   17 mins         ███████████████▒░░░░░░░░░   61.08 %
+INI        11 mins         █████████▓░░░░░░░░░░░░░░░   38.49 %
+Other      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.43 %
+```
+
 <!--END_SECTION:waka-->
