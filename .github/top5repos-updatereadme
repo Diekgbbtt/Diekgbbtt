@@ -1,0 +1,28 @@
+name: Update README with LOC Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # once a day
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository_owner }}/loc-stats:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run LOC stats
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python /app/loc_stats.py
+
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git commit -m "docs(readme): update LOC stats" || echo "No changes to commit"
+          git push
