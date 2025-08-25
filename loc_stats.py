@@ -118,7 +118,7 @@ def main():
         lines.append(f"    - {', '.join(data['tags'])}")
 
     result = "\n".join(lines)
-    update_readme(results, "loc")
+    update_readme(result, "loc")
 
 
 if __name__ == "__main__":
