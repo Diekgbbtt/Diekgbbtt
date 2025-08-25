@@ -3,4 +3,3 @@ FROM python:3.12-slim
 WORKDIR /app
 COPY requirements.txt loc_stat.py .
 RUN pip install --no-cache-dir -r requirements.txt
-ENTRYPOINT ["python", "loc_stats.py"]
