@@ -82,12 +82,6 @@ def update_readme(content, marker="loc"):
         logger.error(f"Failed to update README.md: {e}")
 
 
-if __name__ == "__main__":
-    content = main()   # returns string
-    update_readme(content, marker="loc")
-
-
-
 def main():
     repo_stats = {}
 
