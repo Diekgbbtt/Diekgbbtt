@@ -20,13 +20,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 15 August 2025 - To: 22 August 2025
+From: 16 August 2025 - To: 23 August 2025
 
-Total Time: 29 mins
+Total Time: 8 mins
 
-Markdown   17 mins         ███████████████▒░░░░░░░░░   61.08 %
-INI        11 mins         █████████▓░░░░░░░░░░░░░░░   38.49 %
-Other      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.43 %
+Markdown   8 mins          █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->
