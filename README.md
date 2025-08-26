@@ -31,6 +31,5 @@ No activity tracked
 
 
 <!-- loc starts -->
-# Most Relevant Projects
 
 <!-- loc ends -->
