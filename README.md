@@ -31,5 +31,26 @@ No activity tracked
 
 
 <!-- loc starts -->
+# Most Relevant Projects
 
+- **Diekgbbtt/RansomCheck** : contribution :
+    - 790 additions | 29463 deletions
+    - Java
+    - contribution
+- **Diekgbbtt/seeHeroes** : contribution :
+    - 16262 additions | 8045 deletions
+    - JavaScript, EJS, CSS
+    - contribution
+- **Diekgbbtt/TLSScanner** : contribution :
+    - 3951 additions | 2609 deletions
+    - Python
+    - contribution
+- **Diekgbbtt/ransomControlOrchestration** : contribution :
+    - 3117 additions | 2210 deletions
+    - Python, Shell
+    - contribution
+- **Diekgbbtt/InternshipsManagementPlatform** : contribution :
+    - 3239 additions | 719 deletions
+    - Java
+    - contribution
 <!-- loc ends -->
