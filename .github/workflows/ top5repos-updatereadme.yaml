@@ -21,7 +21,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          cd /github/workspace
+          cd /home/runner/work/Diekgbbtt/Diekgbbtt
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add README.md
