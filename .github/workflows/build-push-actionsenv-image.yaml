@@ -25,3 +25,10 @@ jobs:
         with:
           push: true
           tags: ghcr.io/diekgbbtt/loc-stats:latest
+      - name: Inspect container filesystem
+        run: |
+          echo "Listing root /:"
+          ls -alh /
+          echo "Listing current working directory:"
+          pwd
+          ls -alh
