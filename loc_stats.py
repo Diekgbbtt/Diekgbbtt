@@ -110,7 +110,7 @@ def main():
     top5 = sorted(repo_stats.items(), key=lambda x: (x[1]["additions"] + x[1]["deletions"]), reverse=True)[:5]
 
     # 4. Format output
-    lines = ["# Most Relevant Projects\n"]
+    lines = ["### Most Relevant Projects\n"]
     for repo, data in top5:
         lines.append(f"- **{repo}** : contribution :")
         lines.append(f"    - {data['additions']} additions | {data['deletions']} deletions")
