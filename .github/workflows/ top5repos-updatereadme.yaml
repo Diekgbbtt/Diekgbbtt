@@ -22,7 +22,9 @@ jobs:
       - name: Commit changes
         working-directory: /__w/Diekgbbtt/Diekgbbtt
         run: |
-          git config --global --add safe.directory /__w/Diekgbbtt/Diekgbbtt
+          # marking as safe directory due to directory ownership mismatch, as the repo is initially checked out 
+          # on the host and loaded in the container through a volume, ownership is mantained and git < 2.35 doesn't trust git repos with different UIDs
+          git config --global --add safe.directory /__w/Diekgbbtt/Diekgbbtt 
           git status
           git config user.name github-actions
           git config user.email github-actions@github.com
