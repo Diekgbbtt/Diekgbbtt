@@ -28,3 +28,9 @@ No activity tracked
 ```
 
 <!--END_SECTION:waka-->
+
+
+<!-- loc starts -->
+# Most Relevant Projects
+
+<!-- loc ends -->
