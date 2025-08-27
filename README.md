@@ -31,7 +31,7 @@ No activity tracked
 
 ### Most Relevant Projects
 <!-- loc starts -->
-<ul>
+<ol>
   <li><strong><a href='https://github.com/Diekgbbtt/RansomCheck' style='color:blue; text-decoration:none;'>RansomCheck</a></strong> :
     <ul>
       <li>contributions
@@ -62,7 +62,7 @@ No activity tracked
       <li>5+ months ago</li>
     </ul>
   </li>
-</ul>
+</ol>
 <!-- loc ends -->
 
 I write code mainly in:  
