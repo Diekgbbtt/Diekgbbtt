@@ -35,51 +35,31 @@ No activity tracked
   <li><strong><a href='https://github.com/Diekgbbtt/RansomCheck' style='color:blue; text-decoration:none;'>RansomCheck</a></strong> :
     <ul>
       <li>contributions
-        <div style='margin-left: 20px;'><span style='color:green'>+ 790 loc</span></div>
-        <div style='margin-left: 20px;'><span style='color:red'>- 29463 loc</span></div>
+        <div style='margin-left: 30px;'>➕ 790 loc</div>
+        <div style='margin-left: 30px;'>➖ 29463 loc</div>
       </li>
       <li>Java</li>
-      <li>more than 4 months ago</li>
+      <li>4+ months ago</li>
     </ul>
   </li>
   <li><strong><a href='https://github.com/Diekgbbtt/seeHeroes' style='color:blue; text-decoration:none;'>seeHeroes</a></strong> :
     <ul>
       <li>contributions
-        <div style='margin-left: 20px;'><span style='color:green'>+ 16262 loc</span></div>
-        <div style='margin-left: 20px;'><span style='color:red'>- 8045 loc</span></div>
+        <div style='margin-left: 30px;'>➕ 16262 loc</div>
+        <div style='margin-left: 30px;'>➖ 8045 loc</div>
       </li>
       <li>JavaScript, EJS, CSS</li>
-      <li>more than 11 months ago</li>
-    </ul>
-  </li>
-  <li><strong><a href='https://github.com/Diekgbbtt/TLSScanner' style='color:blue; text-decoration:none;'>TLSScanner</a></strong> :
-    <ul>
-      <li>contributions
-        <div style='margin-left: 20px;'><span style='color:green'>+ 3951 loc</span></div>
-        <div style='margin-left: 20px;'><span style='color:red'>- 2609 loc</span></div>
-      </li>
-      <li>Python</li>
-      <li>more than 7 months ago</li>
+      <li>11+ months ago</li>
     </ul>
   </li>
   <li><strong><a href='https://github.com/Diekgbbtt/ransomControlOrchestration' style='color:blue; text-decoration:none;'>ransomControlOrchestration</a></strong> :
     <ul>
       <li>contributions
-        <div style='margin-left: 20px;'><span style='color:green'>+ 3117 loc</span></div>
-        <div style='margin-left: 20px;'><span style='color:red'>- 2210 loc</span></div>
+        <div style='margin-left: 30px;'>➕ 3117 loc</div>
+        <div style='margin-left: 30px;'>➖ 2210 loc</div>
       </li>
       <li>Python, Shell</li>
-      <li>more than 5 months ago</li>
-    </ul>
-  </li>
-  <li><strong><a href='https://github.com/Diekgbbtt/InternshipsManagementPlatform' style='color:blue; text-decoration:none;'>InternshipsManagementPlatform</a></strong> :
-    <ul>
-      <li>contributions
-        <div style='margin-left: 20px;'><span style='color:green'>+ 3239 loc</span></div>
-        <div style='margin-left: 20px;'><span style='color:red'>- 719 loc</span></div>
-      </li>
-      <li>Java</li>
-      <li>more than 7 months ago</li>
+      <li>5+ months ago</li>
     </ul>
   </li>
 </ul>
