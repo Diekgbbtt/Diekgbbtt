@@ -94,40 +94,49 @@ def calculate_time_gap(last_commit_date):
         
         if delta.days >= 31:
             months = delta.days // 31
-            return f"/more {months} month{'s' if months > 1 else ''} ago"
+            return f"more than {months} month{'s' if months > 1 else ''} ago"
         elif delta.days >= 7:
             weeks = delta.days // 7
-            return f"/more {weeks} week{'s' if weeks > 1 else ''} ago"
+            return f"more than {weeks} week{'s' if weeks > 1 else ''} ago"
         else:
-            return f"{delta.days} day{'s' if delta.days != 1 else ''} ago"
+            return f"more than {delta.days} day{'s' if delta.days != 1 else ''} ago"
     except Exception as e:
         logger.error(f"Failed to calculate time gap: {e}")
         return "unknown"
 
 
 def craft_result_string(top5):
-    """Format the top 5 repositories data into markdown string."""
-    lines = []
+    """Format the top 5 repositories data into HTML string."""
+    lines = ["<ul>"]
+    
     for repo, data in top5:
         # Extract just the project name from full_name (username/project -> project)
         project_name = repo.split('/')[-1]
         repo_url = f"https://github.com/{repo}"
         
-        lines.append(f"- **[{project_name}]({repo_url})** :")
-        lines.append(f"  - contributions")
-        lines.append(f"     <span style='color:green'>+ {data['additions']} loc</span>")
-        lines.append(f"     <span style='color:red'>- {data['deletions']} loc</span>")
-        lines.append(f"  - {', '.join(data['languages']) if data['languages'] else 'N/A'}")
-        lines.append(f"  - {data['time_gap']}")
+        lines.append(f"  <li><strong><a href='{repo_url}'>{project_name}</a></strong> :")
+        lines.append("    <ul>")
+        lines.append("      <li>contributions")
+        lines.append("        <ul>")
+        lines.append(f"          <li><span style='color:green'>+ </span> {data['additions']} loc</li>")
+        lines.append(f"          <li><span style='color:red'>- </span> {data['deletions']} loc</li>")
+        lines.append("        </ul>")
+        lines.append("      </li>")
+        lines.append(f"      <li>{', '.join(data['languages']) if data['languages'] else 'N/A'}</li>")
+        lines.append(f"      <li>{data['time_gap']}</li>")
         
         # Only add forks if > 0
         if data['forks'] > 0:
-            lines.append(f"  - {data['forks']} forks")
+            lines.append(f"      <li>{data['forks']} forks</li>")
         
         # Only add stars if > 0
         if data['stars'] > 0:
-            lines.append(f"  - {data['stars']} stars")
+            lines.append(f"      <li>{data['stars']} stars</li>")
+        
+        lines.append("    </ul>")
+        lines.append("  </li>")
     
+    lines.append("</ul>")
     return "\n".join(lines)
 
 
