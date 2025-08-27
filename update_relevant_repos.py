@@ -80,6 +80,16 @@ def fetch_repo_details(repo):
     except Exception as e:
         logger.error(f"Failed to fetch repo details for {repo}: {e}")
         return 0, 0, None
+    
+
+def calculate_days_delta(last_commit_date):
+    try:
+        commit_date = datetime.fromisoformat(last_commit_date.replace('Z', '+00:00'))
+        now = datetime.now(timezone.utc)
+        return now - commit_date
+    except Exception as e:
+        logger.error(f"Failed to calculate days gap: {e}")
+        return "unknown"
 
 
 def calculate_time_gap(last_commit_date):
@@ -88,18 +98,16 @@ def calculate_time_gap(last_commit_date):
         return "unknown"
     
     try:
-        commit_date = datetime.fromisoformat(last_commit_date.replace('Z', '+00:00'))
-        now = datetime.now(timezone.utc)
-        delta = now - commit_date
+        delta = calculate_days_delta(last_commit_date)
         
         if delta.days >= 31:
             months = delta.days // 31
-            return f"more than {months} month{'s' if months > 1 else ''} ago"
+            return f"{months}+ month{'s' if months > 1 else ''} ago"
         elif delta.days >= 7:
             weeks = delta.days // 7
-            return f"more than {weeks} week{'s' if weeks > 1 else ''} ago"
+            return f"{weeks}+ week{'s' if weeks > 1 else ''} ago"
         else:
-            return f"more than {delta.days} day{'s' if delta.days != 1 else ''} ago"
+            return f"{delta.days}+ day{'s' if delta.days != 1 else ''} ago"
     except Exception as e:
         logger.error(f"Failed to calculate time gap: {e}")
         return "unknown"
@@ -117,8 +125,8 @@ def craft_result_string(top5):
         lines.append(f"  <li><strong><a href='{repo_url}' style='color:blue; text-decoration:none;'>{project_name}</a></strong> :")
         lines.append("    <ul>")
         lines.append("      <li>contributions")
-        lines.append(f"        <div style='margin-left: 20px;'><span style='color:green'>+ {data['additions']} loc</span></div>")
-        lines.append(f"        <div style='margin-left: 20px;'><span style='color:red'>- {data['deletions']} loc</span></div>")
+        lines.append(f"        <div style='margin-left: 30px;'>➕ {data['additions']} loc</div>")
+        lines.append(f"        <div style='margin-left: 30px;'>➖ {data['deletions']} loc</div>")
         lines.append("      </li>")
         lines.append(f"      <li>{', '.join(data['languages']) if data['languages'] else 'N/A'}</li>")
         lines.append(f"      <li>{data['time_gap']}</li>")
@@ -192,10 +200,10 @@ def main():
             }
 
     # 3. Sort & top 5
-    top5 = sorted(repo_stats.items(), key=lambda x: (x[1]["additions"] + x[1]["deletions"]), reverse=True)[:5]
+    top3 = sorted(repo_stats.items(), key=lambda x: (0.1*x[1]["additions"] + 0.05*x[1]["deletions"] + 100*x[1]["forks"] + 1000*x[1]["stars"] - 3*calculate_days_delta(x[1]["last_commit_date"]).days), reverse=True)[:3]
 
     # 4. Format output
-    result = craft_result_string(top5)
+    result = craft_result_string(top3)
     update_readme(result, "loc")
 
 
