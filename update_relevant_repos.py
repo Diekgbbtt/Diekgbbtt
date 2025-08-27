@@ -115,7 +115,7 @@ def calculate_time_gap(last_commit_date):
 
 def craft_result_string(top5):
     """Format the top 5 repositories data into HTML string."""
-    lines = ["<ul>"]
+    lines = ["<ol>"]
     
     for repo, data in top5:
         # Extract just the project name from full_name (username/project -> project)
@@ -142,7 +142,7 @@ def craft_result_string(top5):
         lines.append("    </ul>")
         lines.append("  </li>")
     
-    lines.append("</ul>")
+    lines.append("</ol>")
     return "\n".join(lines)
 
 
