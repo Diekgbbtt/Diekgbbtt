@@ -1,6 +1,7 @@
 import os
 import requests
 import logging
+from datetime import datetime, timezone
 
 # --- Setup ---
 USER = os.environ["GH_USER"]
@@ -57,6 +58,79 @@ def fetch_languages(repo):
         return []
 
 
+def fetch_repo_details(repo):
+    """Fetch repository details including stars, forks, and last commit date."""
+    try:
+        logger.debug(f"Fetching repo details for {repo}...")
+        url = f"https://api.github.com/repos/{repo}"
+        repo_data = requests.get(url, headers=headers).json()
+        
+        stars = repo_data.get("stargazers_count", 0)
+        forks = repo_data.get("forks_count", 0)
+        
+        # Get last commit date
+        commits_url = f"https://api.github.com/repos/{repo}/commits?per_page=1"
+        commits = requests.get(commits_url, headers=headers).json()
+        
+        last_commit_date = None
+        if commits and len(commits) > 0:
+            last_commit_date = commits[0]["commit"]["committer"]["date"]
+        
+        return stars, forks, last_commit_date
+    except Exception as e:
+        logger.error(f"Failed to fetch repo details for {repo}: {e}")
+        return 0, 0, None
+
+
+def calculate_time_gap(last_commit_date):
+    """Calculate time gap from last commit in human-readable format."""
+    if not last_commit_date:
+        return "unknown"
+    
+    try:
+        commit_date = datetime.fromisoformat(last_commit_date.replace('Z', '+00:00'))
+        now = datetime.now(timezone.utc)
+        delta = now - commit_date
+        
+        if delta.days >= 31:
+            months = delta.days // 31
+            return f"/more {months} month{'s' if months > 1 else ''} ago"
+        elif delta.days >= 7:
+            weeks = delta.days // 7
+            return f"/more {weeks} week{'s' if weeks > 1 else ''} ago"
+        else:
+            return f"{delta.days} day{'s' if delta.days != 1 else ''} ago"
+    except Exception as e:
+        logger.error(f"Failed to calculate time gap: {e}")
+        return "unknown"
+
+
+def craft_result_string(top5):
+    """Format the top 5 repositories data into markdown string."""
+    lines = []
+    for repo, data in top5:
+        # Extract just the project name from full_name (username/project -> project)
+        project_name = repo.split('/')[-1]
+        repo_url = f"https://github.com/{repo}"
+        
+        lines.append(f"- **[{project_name}]({repo_url})** :")
+        lines.append(f"  - contributions")
+        lines.append(f"     <span style='color:green'>+ {data['additions']} loc</span>")
+        lines.append(f"     <span style='color:red'>- {data['deletions']} loc</span>")
+        lines.append(f"  - {', '.join(data['languages']) if data['languages'] else 'N/A'}")
+        lines.append(f"  - {data['time_gap']}")
+        
+        # Only add forks if > 0
+        if data['forks'] > 0:
+            lines.append(f"  - {data['forks']} forks")
+        
+        # Only add stars if > 0
+        if data['stars'] > 0:
+            lines.append(f"  - {data['stars']} stars")
+    
+    return "\n".join(lines)
+
+
 def update_readme(content, marker="loc"):
     try:
         with open("README.md", "r", encoding="utf-8") as f:
@@ -99,25 +173,22 @@ def main():
             total_del += dele
 
         if total_add + total_del > 0:
+            stars, forks, last_commit_date = fetch_repo_details(repo)
             repo_stats[repo] = {
                 "additions": total_add,
                 "deletions": total_del,
                 "languages": fetch_languages(repo),
-                "tags": ["contribution"]  # placeholder, can enrich later
+                "stars": stars,
+                "forks": forks,
+                "last_commit_date": last_commit_date,
+                "time_gap": calculate_time_gap(last_commit_date)
             }
 
     # 3. Sort & top 5
     top5 = sorted(repo_stats.items(), key=lambda x: (x[1]["additions"] + x[1]["deletions"]), reverse=True)[:5]
 
     # 4. Format output
-    lines = ["### Most Relevant Projects\n"]
-    for repo, data in top5:
-        lines.append(f"- **{repo}** : contribution :")
-        lines.append(f"    - {data['additions']} additions | {data['deletions']} deletions")
-        lines.append(f"    - {', '.join(data['languages']) if data['languages'] else 'N/A'}")
-        lines.append(f"    - {', '.join(data['tags'])}")
-
-    result = "\n".join(lines)
+    result = craft_result_string(top5)
     update_readme(result, "loc")
 
 
