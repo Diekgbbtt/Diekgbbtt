@@ -31,25 +31,34 @@ No activity tracked
 
 ### Most Relevant Projects
 <!-- loc starts -->
-
-- **Diekgbbtt/RansomCheck** : contribution :
-    - 790 additions | 29463 deletions
-    - Java
-    - contribution
-- **Diekgbbtt/seeHeroes** : contribution :
-    - 16262 additions | 8045 deletions
-    - JavaScript, EJS, CSS
-    - contribution
-- **Diekgbbtt/TLSScanner** : contribution :
-    - 3951 additions | 2609 deletions
-    - Python
-    - contribution
-- **Diekgbbtt/ransomControlOrchestration** : contribution :
-    - 3117 additions | 2210 deletions
-    - Python, Shell
-    - contribution
-- **Diekgbbtt/InternshipsManagementPlatform** : contribution :
-    - 3239 additions | 719 deletions
-    - Java
-    - contribution
+- **[RansomCheck](https://github.com/Diekgbbtt/RansomCheck)** :
+  - contributions
+     <span style='color:green'>+ 790 loc</span>
+     <span style='color:red'>- 29463 loc</span>
+  - Java
+  - /more 4 months ago
+- **[seeHeroes](https://github.com/Diekgbbtt/seeHeroes)** :
+  - contributions
+     <span style='color:green'>+ 16262 loc</span>
+     <span style='color:red'>- 8045 loc</span>
+  - JavaScript, EJS, CSS
+  - /more 11 months ago
+- **[TLSScanner](https://github.com/Diekgbbtt/TLSScanner)** :
+  - contributions
+     <span style='color:green'>+ 3951 loc</span>
+     <span style='color:red'>- 2609 loc</span>
+  - Python
+  - /more 7 months ago
+- **[ransomControlOrchestration](https://github.com/Diekgbbtt/ransomControlOrchestration)** :
+  - contributions
+     <span style='color:green'>+ 3117 loc</span>
+     <span style='color:red'>- 2210 loc</span>
+  - Python, Shell
+  - /more 5 months ago
+- **[InternshipsManagementPlatform](https://github.com/Diekgbbtt/InternshipsManagementPlatform)** :
+  - contributions
+     <span style='color:green'>+ 3239 loc</span>
+     <span style='color:red'>- 719 loc</span>
+  - Java
+  - /more 7 months ago
 <!-- loc ends -->
