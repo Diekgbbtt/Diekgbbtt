@@ -31,34 +31,60 @@ No activity tracked
 
 ### Most Relevant Projects
 <!-- loc starts -->
-- **[RansomCheck](https://github.com/Diekgbbtt/RansomCheck)** :
-  - contributions
-     <span style='color:green'>+ 790 loc</span>
-     <span style='color:red'>- 29463 loc</span>
-  - Java
-  - /more 4 months ago
-- **[seeHeroes](https://github.com/Diekgbbtt/seeHeroes)** :
-  - contributions
-     <span style='color:green'>+ 16262 loc</span>
-     <span style='color:red'>- 8045 loc</span>
-  - JavaScript, EJS, CSS
-  - /more 11 months ago
-- **[TLSScanner](https://github.com/Diekgbbtt/TLSScanner)** :
-  - contributions
-     <span style='color:green'>+ 3951 loc</span>
-     <span style='color:red'>- 2609 loc</span>
-  - Python
-  - /more 7 months ago
-- **[ransomControlOrchestration](https://github.com/Diekgbbtt/ransomControlOrchestration)** :
-  - contributions
-     <span style='color:green'>+ 3117 loc</span>
-     <span style='color:red'>- 2210 loc</span>
-  - Python, Shell
-  - /more 5 months ago
-- **[InternshipsManagementPlatform](https://github.com/Diekgbbtt/InternshipsManagementPlatform)** :
-  - contributions
-     <span style='color:green'>+ 3239 loc</span>
-     <span style='color:red'>- 719 loc</span>
-  - Java
-  - /more 7 months ago
+<ul>
+  <li><strong><a href='https://github.com/Diekgbbtt/RansomCheck' style='color:blue; text-decoration:none;'>RansomCheck</a></strong> :
+    <ul>
+      <li>contributions
+        <div style='margin-left: 20px;'><span style='color:green'>+ 790 loc</span></div>
+        <div style='margin-left: 20px;'><span style='color:red'>- 29463 loc</span></div>
+      </li>
+      <li>Java</li>
+      <li>more than 4 months ago</li>
+    </ul>
+  </li>
+  <li><strong><a href='https://github.com/Diekgbbtt/seeHeroes' style='color:blue; text-decoration:none;'>seeHeroes</a></strong> :
+    <ul>
+      <li>contributions
+        <div style='margin-left: 20px;'><span style='color:green'>+ 16262 loc</span></div>
+        <div style='margin-left: 20px;'><span style='color:red'>- 8045 loc</span></div>
+      </li>
+      <li>JavaScript, EJS, CSS</li>
+      <li>more than 11 months ago</li>
+    </ul>
+  </li>
+  <li><strong><a href='https://github.com/Diekgbbtt/TLSScanner' style='color:blue; text-decoration:none;'>TLSScanner</a></strong> :
+    <ul>
+      <li>contributions
+        <div style='margin-left: 20px;'><span style='color:green'>+ 3951 loc</span></div>
+        <div style='margin-left: 20px;'><span style='color:red'>- 2609 loc</span></div>
+      </li>
+      <li>Python</li>
+      <li>more than 7 months ago</li>
+    </ul>
+  </li>
+  <li><strong><a href='https://github.com/Diekgbbtt/ransomControlOrchestration' style='color:blue; text-decoration:none;'>ransomControlOrchestration</a></strong> :
+    <ul>
+      <li>contributions
+        <div style='margin-left: 20px;'><span style='color:green'>+ 3117 loc</span></div>
+        <div style='margin-left: 20px;'><span style='color:red'>- 2210 loc</span></div>
+      </li>
+      <li>Python, Shell</li>
+      <li>more than 5 months ago</li>
+    </ul>
+  </li>
+  <li><strong><a href='https://github.com/Diekgbbtt/InternshipsManagementPlatform' style='color:blue; text-decoration:none;'>InternshipsManagementPlatform</a></strong> :
+    <ul>
+      <li>contributions
+        <div style='margin-left: 20px;'><span style='color:green'>+ 3239 loc</span></div>
+        <div style='margin-left: 20px;'><span style='color:red'>- 719 loc</span></div>
+      </li>
+      <li>Java</li>
+      <li>more than 7 months ago</li>
+    </ul>
+  </li>
+</ul>
 <!-- loc ends -->
+
+I write code mainly in:  
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=transparent&text_color=9198a1&hide_title=true&langs_count=10&hide=html,css)
