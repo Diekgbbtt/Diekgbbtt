@@ -17,7 +17,7 @@ jobs:
         env:
           GH_USER: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: python /app/loc_stats.py
+        run: python /app/update_relevant_repos.py
 
       - name: Commit changes
         working-directory: /__w/Diekgbbtt/Diekgbbtt
