@@ -114,13 +114,11 @@ def craft_result_string(top5):
         project_name = repo.split('/')[-1]
         repo_url = f"https://github.com/{repo}"
         
-        lines.append(f"  <li><strong><a href='{repo_url}'>{project_name}</a></strong> :")
+        lines.append(f"  <li><strong><a href='{repo_url}' style='color:blue; text-decoration:none;'>{project_name}</a></strong> :")
         lines.append("    <ul>")
         lines.append("      <li>contributions")
-        lines.append("        <ul>")
-        lines.append(f"          <li><span style='color:green'>+ </span> {data['additions']} loc</li>")
-        lines.append(f"          <li><span style='color:red'>- </span> {data['deletions']} loc</li>")
-        lines.append("        </ul>")
+        lines.append(f"        <div style='margin-left: 20px;'><span style='color:green'>+ {data['additions']} loc</span></div>")
+        lines.append(f"        <div style='margin-left: 20px;'><span style='color:red'>- {data['deletions']} loc</span></div>")
         lines.append("      </li>")
         lines.append(f"      <li>{', '.join(data['languages']) if data['languages'] else 'N/A'}</li>")
         lines.append(f"      <li>{data['time_gap']}</li>")
