@@ -69,4 +69,4 @@ INI          0 secs          ▒░░░░░░░░░░░░░░░░
 
 I write code mainly in:  
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=transparent&text_color=9198a1&hide_title=true&langs_count=10&hide=html,css)
+![](https://github-profile-langstats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=transparent&text_color=9198a1&hide_title=true&langs_count=10&hide=html,css)
