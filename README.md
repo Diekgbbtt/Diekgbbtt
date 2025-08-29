@@ -20,13 +20,17 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 19 August 2025 - To: 26 August 2025
+From: 20 August 2025 - To: 27 August 2025
 
-Total Time: 41 mins
+Total Time: 3 hrs 25 mins
 
-Java         40 mins         ████████████████████████▒   96.80 %
-Git Config   0 secs          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.35 %
-INI          0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.85 %
+Java         1 hr 40 mins    ████████████▒░░░░░░░░░░░░   48.83 %
+Python       1 hr 21 mins    ██████████░░░░░░░░░░░░░░░   39.71 %
+XML          11 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.77 %
+Git Config   8 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   04.07 %
+INI          2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
+Markdown     0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.24 %
+Text         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
 ```
 
 <!--END_SECTION:waka-->
