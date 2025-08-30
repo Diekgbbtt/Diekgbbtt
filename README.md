@@ -20,17 +20,17 @@
 <!--START_SECTION:waka-->
 
 ```txt
-From: 20 August 2025 - To: 27 August 2025
+From: 22 August 2025 - To: 29 August 2025
 
-Total Time: 3 hrs 25 mins
+Total Time: 7 hrs 18 mins
 
-Java         1 hr 40 mins    ████████████▒░░░░░░░░░░░░   48.83 %
-Python       1 hr 21 mins    ██████████░░░░░░░░░░░░░░░   39.71 %
-XML          11 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.77 %
-Git Config   8 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   04.07 %
-INI          2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.35 %
-Markdown     0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.24 %
-Text         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.02 %
+Java         5 hrs 16 mins   ██████████████████░░░░░░░   72.15 %
+Python       1 hr 21 mins    ████▓░░░░░░░░░░░░░░░░░░░░   18.59 %
+XML          28 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.60 %
+Git Config   8 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.91 %
+INI          2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.63 %
+Markdown     0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 %
+Text         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
 ```
 
 <!--END_SECTION:waka-->
