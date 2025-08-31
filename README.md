@@ -45,7 +45,7 @@ Text         0 secs          ░░░░░░░░░░░░░░░░░
         <div style='margin-left: 30px;'>➖ 0 loc</div>
       </li>
       <li>JavaScript, Shell</li>
-      <li>1+ day ago</li>
+      <li>2+ days ago</li>
     </ul>
   </li>
   <li><strong><a href='https://github.com/Diekgbbtt/RansomCheck' style='color:blue; text-decoration:none;'>RansomCheck</a></strong> :
