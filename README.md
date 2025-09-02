@@ -41,6 +41,8 @@ Text         0 secs          ░░░░░░░░░░░░░░░░░
 </ol>
 <!-- loc ends -->
 
+![](https://readme-update-coding-stats.vercel.app/api/pin?username=diekgbbtt&repo=tlsscanner)
+
 I write code mainly in:  
 
 ![](https://github-profile-langstats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=donut&theme=transparent&text_color=9198a1&hide_title=true&langs_count=5&hide=html,css,EJS&exclude_repo=ITG-dev,github-profile-langstats)
