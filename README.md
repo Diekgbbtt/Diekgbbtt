@@ -38,36 +38,6 @@ Text         0 secs          ░░░░░░░░░░░░░░░░░
 ### Most Relevant Projects
 <!-- loc starts -->
 <ol>
-  <li><strong><a href='https://github.com/Diekgbbtt/RansomCheck' style='color:blue; text-decoration:none;'>RansomCheck</a></strong> :
-    <ul>
-      <li>contributions
-        <div style='margin-left: 30px;'>➕ 790 loc</div>
-        <div style='margin-left: 30px;'>➖ 29463 loc</div>
-      </li>
-      <li>Java</li>
-      <li>4+ months ago</li>
-    </ul>
-  </li>
-  <li><strong><a href='https://github.com/Diekgbbtt/seeHeroes' style='color:blue; text-decoration:none;'>seeHeroes</a></strong> :
-    <ul>
-      <li>contributions
-        <div style='margin-left: 30px;'>➕ 16262 loc</div>
-        <div style='margin-left: 30px;'>➖ 8045 loc</div>
-      </li>
-      <li>JavaScript, EJS, CSS</li>
-      <li>11+ months ago</li>
-    </ul>
-  </li>
-  <li><strong><a href='https://github.com/Diekgbbtt/ransomControlOrchestration' style='color:blue; text-decoration:none;'>ransomControlOrchestration</a></strong> :
-    <ul>
-      <li>contributions
-        <div style='margin-left: 30px;'>➕ 3117 loc</div>
-        <div style='margin-left: 30px;'>➖ 2210 loc</div>
-      </li>
-      <li>Python, Shell</li>
-      <li>5+ months ago</li>
-    </ul>
-  </li>
 </ol>
 <!-- loc ends -->
 
