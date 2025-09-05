@@ -37,14 +37,23 @@ Text         0 secs          ░░░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-### Most Relevant Projects
+![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact)
+
+### Some Relevant Projects
 <!-- loc starts -->
 <ol>
 </ol>
 <!-- loc ends -->
+    <a href="https://github.com/diekgbbtt/readme-update-coding-stats">
+      <img align="center" src="https://readme-update-coding-stats.vercel.app/api/pin?username=diekgbbtt&repo=tlsscanner&theme=transparent&border_radius=14" />
+    </a>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <a href="https://github.com/diekgbbtt/readme-update-coding-stats">
+      <img align="center" src="https://readme-update-coding-stats.vercel.app/api/pin?username=diekgbbtt&repo=ransomcontrolorchestration&theme=transparent&border_radius=14" />
+    </a> 
+    
+### I have written code mainly in
 
-![](https://readme-update-coding-stats.vercel.app/api/pin?username=diekgbbtt&repo=tlsscanner)
-
-I write code mainly in:  
-
-![](https://github-profile-langstats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=donut&theme=transparent&text_color=9198a1&hide_title=true&langs_count=5&hide=html,css,EJS&exclude_repo=ITG-dev,github-profile-langstats)
+![](https://readme-update-coding-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=donut&theme=transparent&text_color=9198a1&hide_title=true&langs_count=5&hide=html,css,EJS&exclude_repo=ITG-dev,github-profile-langstats)
