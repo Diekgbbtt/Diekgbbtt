@@ -32,6 +32,6 @@
 
 ![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&hide=text,ini&border_color=00BFFF)
     
-### I have written code mainly in
+### In the last year I have written code mainly in
 
 ![](https://readme-update-coding-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&langs_count=5&hide=html,css,EJS&exclude_repo=ITG-dev,github-profile-langstats&border_color=00BFFF)
