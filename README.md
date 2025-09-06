@@ -18,13 +18,13 @@
 
 ### Some Relevant Projects
 
-<a href="https://github.com/diekgbbtt/tlsscanner">
+<a href="https://github.com/diekgbbtt/tlsscanner" target="_blank">
     <img align="center" src="https://readme-update-coding-stats.vercel.app/api/pin?username=diekgbbtt&repo=tlsscanner&theme=algolia&border_radius=14&border_color=00BFFF" />
 </a>
 &nbsp;
 &nbsp;
 &nbsp;
-<a href="https://github.com/diekgbbtt/ransomcontrolorchestration">
+<a href="https://github.com/diekgbbtt/ransomcontrolorchestration" target="_blank">
     <img align="center" src="https://readme-update-coding-stats.vercel.app/api/pin?username=diekgbbtt&repo=ransomcontrolorchestration&theme=algolia&border_radius=14&border_color=00BFFF" />
 </a> 
 
