@@ -1,3 +1,5 @@
+# DISCLAIMER: DISCONTINUED temporarily, in favour of repo service at https://github.com/Diekgbbtt/readme-update-coding-stats - AUTOMATION TO BE IMPLEMENTED
+
 import os
 import requests
 import logging

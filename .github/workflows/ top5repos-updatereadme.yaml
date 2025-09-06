@@ -1,33 +1,35 @@
-name: Update README with LOC Stats
+# DISCLAIMER: DISCONTINUED temporarily, in favour of repo service at https://github.com/Diekgbbtt/readme-update-coding-stats - AUTOMATION TO BE IMPLEMENTED
 
-on:
-  schedule:
-    - cron: "0 0 * * *"   # once a day
-  workflow_dispatch:
+# name: Update README with LOC Stats
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/diekgbbtt/loc-stats:latest
-    steps:
-      - uses: actions/checkout@v4
+# on:
+#   schedule:
+#     - cron: "0 0 * * *"   # once a day
+#   workflow_dispatch:
 
-      - name: Run LOC stats
-        env:
-          GH_USER: ${{ github.repository_owner }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: python /app/update_relevant_repos.py
+# jobs:
+#   update:
+#     runs-on: ubuntu-latest
+#     container:
+#       image: ghcr.io/diekgbbtt/loc-stats:latest
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - name: Commit changes
-        working-directory: /__w/Diekgbbtt/Diekgbbtt
-        run: |
-          # marking as safe directory due to directory ownership mismatch, as the repo is initially checked out 
-          # on the host and loaded in the container through a volume, ownership is mantained and git < 2.35 doesn't trust git repos with different UIDs
-          git config --global --add safe.directory /__w/Diekgbbtt/Diekgbbtt 
-          git status
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add README.md
-          git commit -m "docs(readme): update LOC stats" || echo "No changes to commit"
-          git push
+#       - name: Run LOC stats
+#         env:
+#           GH_USER: ${{ github.repository_owner }}
+#           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+#         run: python /app/update_relevant_repos.py
+
+#       - name: Commit changes
+#         working-directory: /__w/Diekgbbtt/Diekgbbtt
+#         run: |
+#           # marking as safe directory due to directory ownership mismatch, as the repo is initially checked out 
+#           # on the host and loaded in the container through a volume, ownership is mantained and git < 2.35 doesn't trust git repos with different UIDs
+#           git config --global --add safe.directory /__w/Diekgbbtt/Diekgbbtt 
+#           git status
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git add README.md
+#           git commit -m "docs(readme): update LOC stats" || echo "No changes to commit"
+#           git push
