@@ -30,7 +30,7 @@
 
 ### Weekly Coding Stats
 
-![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&hide=text,ini&border_color=00BFFF)
+![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&hide=text,ini,json,yaml&border_color=00BFFF)
     
 ### In the last year I have written code mainly in
 
