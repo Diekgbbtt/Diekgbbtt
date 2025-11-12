@@ -8,8 +8,8 @@
 
 
 ### Currently Learning 📚 
+- Hunting MCP vulnerabilities 
 - Go <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="30" height="20" alt="go icon" />
-- Software Architectures 🏗️
 
 ### Languages & Tools
 <p align="left">
