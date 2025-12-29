@@ -2,14 +2,14 @@
 
 ### What I do 👨🏼‍💻 
 
-- *[trying]* `On a daily, integrating security seamlessly into SDLC.`
-- *[free time]* `Contributing to open source projects, particularly cybersecurity focused.`
-- *[more free time]* `Playing CTFs` 
+- `Bug hunting`
+- `Contributing to open source tools used on a daily`
+- `CTFs`
 
 
 ### Currently Learning 📚 
-- Hunting MCP vulnerabilities 
-- Go <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="30" height="20" alt="go icon" />
+- exams season 📚
+
 
 ### Languages & Tools
 <p align="left">
