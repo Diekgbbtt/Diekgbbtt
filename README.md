@@ -34,4 +34,4 @@
     
 ### Yearly Coding Stats
 
-![](https://readme-update-coding-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&langs_count=5&hide=html,css,EJS,ipynb&exclude_repo=fss-se2-assignment,ITG-dev,github-profile-langstats&border_color=00BFFF)
+![](https://readme-update-coding-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&langs_count=5&hide=html,css,EJS,ipynb&exclude_repo=fss-se2-assignment,ITG-dev,github-profile-langstats&border_color=00BFFF&stats_format=bytes)
