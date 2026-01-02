@@ -3,12 +3,12 @@
 ### What I do 👨🏼‍💻 
 
 - `Bug hunting`
-- `Contributing to open source tools used on a daily`
+- `Contributing to the cybersecurity OSS ecosystem`
 - `CTFs`
 
 
 ### Currently Learning 📚 
-- exams season 📚
+- exams season 🧘🏼‍♂️
 
 
 ### Languages & Tools
@@ -32,6 +32,6 @@
 
 ![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&hide=ipynb,text,ini,json,yaml&border_color=00BFFF)
     
-### In the last year I have written code mainly in
+### Yearly Coding Stats
 
 ![](https://readme-update-coding-stats.vercel.app/api/top-langs/?username=Diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&langs_count=5&hide=html,css,EJS,ipynb&exclude_repo=ITG-dev,github-profile-langstats&border_color=00BFFF)
