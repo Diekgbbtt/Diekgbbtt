@@ -8,8 +8,7 @@
 
 
 ### Currently Learning 📚 
-- exams season 🧘🏼‍♂️
-
+- agentic systems safety & security 🤖
 
 ### Languages & Tools
 <p align="left">
