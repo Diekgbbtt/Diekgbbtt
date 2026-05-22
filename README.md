@@ -29,7 +29,7 @@
 
 ### Weekly Coding Stats
 
-![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&hide=ipynb,text,ini,json,yaml&border_color=00BFFF)
+![](https://readme-update-coding-stats.vercel.app/api/wakatime?username=diekgbbtt&layout=compact&theme=algolia&border_radius=14&hide_title=true&hide=typescript,ipynb,text,ini,json,yaml&border_color=00BFFF)
     
 ### Yearly Coding Stats
 
